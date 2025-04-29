@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+.big-grid{
+    display: grid;
+    grid-template-rows: 40% 60%;
+    grid-template-areas:
+        "header"
+        "bottom";
+    margin: 0 auto;
+    height: 100vh;
+    width: 100%;
+    background-color: #fdfdf9;
+}
+header{
+    background-color: #7ED6A9;
+    grid-area: header;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "title"
+        "logo";
+    align-items: center;
+    justify-items: center;
+}
+h1{
+    grid-area: title;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #2E2E2E;
+    font-size: 40px;
+    margin: 0;
+}
+.logo{
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.budget-buddy-logo{
+    max-width: 140px;
+    width: 100%;
+    height: auto;
+}
+.navbar{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+}
+.homenav, .budgetnav, .tipsnav, .profilenav, .settingsnav{
+    list-style: none;
+}
+.homenav a, .budgetnav a, .tipsnav a, .profilenav a, .settingsnav a{
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #2E2E2E;
+}
+.navbar li a:hover, .navbarli a:focus{
+    text-decoration: underline;
+    text-decoration-color: #2E2E2E;
+    cursor: pointer;
+    background-color: #D5F2EA;
+}
+.form-container{
+    margin-top: 45px;
+    width: 90%;
+    height: 315px;
+    background-color: #F0FBF6;
+    justify-self: center;
+    border: 2px solid;
+    border-color: #53C6BE;
+    border-radius: 45px;
+}
+fieldset{
+    border: none;
+    justify-self: center;
+}
+#your-email{
+    background-color: #F5F5F5;
+    border: 1px solid;
+    border-color: #E8E8E8;
+    width: 70vw;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 45px;
+    margin-bottom: 20px;
+}
+#your-email::placeholder{
+    color: #888888;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    padding-left: 20px;
+}
+#your-password{
+    background-color: #F5F5F5;
+    border: 1px solid;
+    border-color: #E8E8E8;
+    width: 70vw;
+    height: 50px;
+    border-radius: 45px;
+    margin: 0;
+}
+#your-password::placeholder{
+    color: #888888;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    padding-left: 20px;
+}
+.below-password{
+    display: flex;
+    margin-top: 0px;
+    margin-left: 10vw;
+}
+.remember-me-box{
+    border: 2px solid;
+    border-color: #2E2E2E;
+    width: 7px;
+    height: 7px;
+    align-self: center;
+    margin-right: 5px;
+}
+.remember{
+    color: #2E2E2E;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    align-self: center;
+}
+.forgot{
+    color: #2E2E2E;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    align-self: center;
+    margin-left: 2vw;
+}
+.forgot:hover, .forgot:focus{
+    text-decoration: underline;
+    text-decoration-color: #53C6BE;
+    cursor: pointer;
+}
+.login-button{
+    justify-self: center;
+}
+#login{
+    background-color: #7ED6A9;
+    border: none;
+    width: 70vw;
+    height: 45px;
+    border-radius: 45px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #2E2E2E;
+}
+#login:hover, #login:focus{
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: #2E2E2E;
+    border: 2px solid;
+    border-color: #7ED6A9;
+    background-color: #fdfdf9;
+}
+.createacct{
+    display: flex;
+    margin-left: 9vw;
+    background: transparent;
+}
+.donthave{
+    color: #2E2E2E;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+.createaccountli{
+    display: flex;
+    align-self: center;
+    margin-left: 5px;
+}
+.createaccountlink{
+    background: transparent;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #2E2E2E;
+    text-decoration: none;
+    list-style: none;
+}
+.createaccountlink:hover, .createaccountlink:focus{
+    text-decoration: underline;
+    cursor: pointer;
+}
+footer{
+    background-color: #7ED6A9;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+}
+.footer-text{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #2E2E2E;
+    font-size: 16px;
+    margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .big-grid{
+        display: grid;
+        grid-template-rows: 30% 70%;
+        grid-template-areas:
+            "header"
+            "bottom";
+        margin: 0 auto;
+        height: 100vh;
+        width: 100%;
+        background-color: #fdfdf9;
+    }
+    header{
+        background-color: #7ED6A9;
+        grid-area: header;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    h1{
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        color: #2E2E2E;
+        font-size: 46px;
+        margin: 0;
+        white-space: nowrap;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .budget-buddy-logo{  
+        max-width: 175px; 
+    }
+    .navbar{
+        display: flex;
+        gap: 15px;
+        justify-content: flex-end;
+        align-items: center;
+        white-space: nowrap;
+        margin-top: 155px;
+    }
+    .homenav, .budgetnav, .tipsnav, .profilenav, .settingsnav{
+        list-style: none;
+    }
+    .homenav a, .budgetnav a, .tipsnav a, .profilenav a, .settingsnav a{
+        text-decoration: none;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+        color: #2E2E2E;
+    }
+    .navbar li a:hover, .navbarli a:focus{
+        text-decoration: underline;
+        text-decoration-color: #2E2E2E;
+        cursor: pointer;
+        background-color: #D5F2EA;
+    }
+    .form-container{
+        margin-top: 50px;
+        width: 80%;
+        height: 375px;
+        background-color: #F0FBF6;
+        justify-self: center;
+        border: 2px solid;
+        border-color: #53C6BE;
+        border-radius: 45px;
+    }
+    fieldset{
+        border: none;
+        justify-self: center;
+    }
+    #your-email{
+        background-color: #F5F5F5;
+        border: 1px solid;
+        border-color: #E8E8E8;
+        width: 70vw;
+        height: 70px;
+        margin-top: 20px;
+        border-radius: 45px;
+        margin-bottom: 20px;
+    }
+    #your-email::placeholder{
+        color: #888888;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    #your-password{
+        background-color: #F5F5F5;
+        border: 1px solid;
+        border-color: #E8E8E8;
+        width: 70vw;
+        height: 70px;
+        border-radius: 45px;
+        margin: 0;
+    }
+    #your-password::placeholder{
+        color: #888888;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    .below-password{
+        display: flex;
+        margin-top: 0px;
+        margin-left: 5vw;
+    }
+    .remember-me-box{
+        border: 2px solid;
+        border-color: #2E2E2E;
+        width: 12px;
+        height: 12px;
+        align-self: center;
+        margin-right: 5px;
+    }
+    .remember{
+        color: #2E2E2E;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18px;
+        align-self: center;
+    }
+    .forgot{
+        color: #2E2E2E;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18px;
+        align-self: center;
+        margin-left: 2vw;
+    }
+    .forgot:hover, .forgot:focus{
+        text-decoration: underline;
+        text-decoration-color: #2E2E2E;
+        cursor: pointer;
+    }
+    .login-button{
+        justify-self: center;
+    }
+    #login{
+        background-color: #7ED6A9;
+        border: none;
+        width: 70vw;
+        height: 60px;
+        border-radius: 45px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 22px;
+        color: #2E2E2E;
+    }
+    #login:hover, #login:focus{
+        cursor: pointer;
+        text-decoration: underline;
+        text-decoration-color: #2E2E2E;
+        border: 2px solid;
+        border-color: #7ED6A9;
+        background-color: #fdfdf9;
+    }
+    .createacct{
+        display: flex;
+        margin-left: 5vw;
+        background: transparent;
+    }
+    .donthave{
+        color: #2E2E2E;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18px;
+    }
+    .createaccountli{
+        display: flex;
+        align-self: center;
+        margin-left: 5px;
+    }
+    .createaccountlink{
+        background: transparent;
+        border: none;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18px;
+        color: #2E2E2E;
+        text-decoration: none;
+        list-style: none;
+    }
+    .createaccountlink:hover, .createaccountlink:focus{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    footer{
+        background-color: #7ED6A9;
+        height: 75px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+    }
+    .footer-text{
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        color: #2E2E2E;
+        font-size: 18px;
+        margin: 0;
+    }
+}
